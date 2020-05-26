@@ -1,2 +1,2 @@
 # Portfolio
-A basic modern portfolio page with project links
+A basic modern portfolio page with project links.
