@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Andrew Speer | GitHub portfolio page</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- Leave those next 4 lines if you care about users using IE8 -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			h1, h2, h3, h4, h5{
+				color:#4A4E69 !important;
+				font-weight: 300;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			p {
+				color: #4A4E69;
+				font-weight: 300;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			.profile-pic {
+				box-shadow: 0px 4px 6px 2px lightgrey;
+			  border-radius: 50%
+			}
+
+			.m-t-1 {
+				margin-top:1em;
+			}
+
+			.p-t-1 {
+				padding-top:1em;
+			}
+
+
+			.about-me {
+				margin-top:25px;
+			}
+
+			.navbar-default {
+				background-color: #C9ADA7;
+				background: none;
+				border: none;
+				border-radius:0;
+			}
+
+			.repo-row {
+				padding: 65px 10px;
+			}
+
+			.repo-row:nth-child(odd) {
+			  background-color: lightgrey;
+			  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			}
+
+			.vertical-align {
+				display: flex;
+			  align-items: center;
+			  justify-content: center;
+			}
+
+			@media (max-width: 991px) {
+			    .row.vertical-align {
+			        display: block; /* Turn off the flexible box layout */
+			    }
+			}
+
+			.work-item-img {
+				max-height: 480px;
+				max-width:80%;
+			}
+
+			.row-footer {
+			/*	background-color: lightgrey;
+				-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
+				clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);*/
+				padding: 65px 10px;
+			}
+
+			.linkedin-btn {
+				width:140px;
+				box-shadow: 0px 2px 5px 1px lightgrey;
+				padding: 12px;
+				border-radius: 5px;
+			}
+
+			.btn-launch {
+				width:100%;
+				max-width:200px;
+				background-color: #549657;
+				color:white;
+				box-shadow: 0px 2px 5px 1px darkgrey;
+			}
+
+			.btn-launch:hover,
+			.btn-launch:focus {
+				color: white;
+				background: #3d7140;
+			}
+
+			.techUsed {
+				font-size:54px;
+				padding: 40px 0 0;
+			}
+
+			.techUsed i {
+				margin:0 15px;
+			}
+
+			.toolsUsed {
+				font-size: 100px;
+			  padding: 40px 0;
+			}
+
+			.toolsUsed i {
+				margin:0 15px;
+			}
+
+			.about {
+				margin-bottom:80px;
+			}
+		</style>
+
+	</head>
+	<body>
+
+
+		<div class="container-fluid">
+
+			<section class="about">
+				<div class="text-center" style="margin-top:100px">
+					<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGqtrx0e5oDyw/profile-displayphoto-shrink_200_200/0?e&#x3D;1596067200&amp;v&#x3D;beta&amp;t&#x3D;WKVbAIg1NYwyZFj1KG6Q87Cm5xk0Q3KAGElCe6Rw00Q" width=200 class="profile-pic">
+					<h1>Andrew Speer</h1>
+				  <h3>Full Stack Web Developer</h3>
+				  <h5>I&#x27;m Andrew and I build things for the web. Technologies: React, Node.js, rest/GraphQL, Typescript, SQL, Express, CSS3, Django, and Python. Computer Science student at lambda.</h5>
+
+				  <div class="text-center" style="margin:20px">
+				  	<a href="mailto:nottolidev@gmail.com" class="" target="_blank">
+				  		nottolidev@gmail.com
+				  	</a>
+				  </div>
+				</div>
+			</section>
+
+			<section class="repos">
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+			  		    		<div class="col-xs-12 col-md-8">
+			  		    			<img src="https://staging.d1q97okbcd2s3b.amplifyapp.com/static/media/market.cb5b37fa.png" class="img-responsive work-item-img center-block">
+			  		    		</div>
+			  		    		<div class="col-xs-12 col-md-4">
+			  		    			<h2>
+													PartNerd
+				  		    		</h2>
+			  		    			
+			  		    			
+			  		    			<p>PartNerd is an application for matching web developers to clients. It is written with React hooks, Typescript, Apollo, Express, GraphQL, PostgreSQL, and Material UI.  
+Worked on a small full stack team using agile methodology to deliver product.
+<a href="https://github.com/Lambda-School-Labs/nusite-fe"></a>. 
+
+Deployed on AWS:<a href="https://staging.d1q97okbcd2s3b.amplifyapp.com/""></a></p>
+			  		    		</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-react-plain-wordmark colored"></i>
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-postgresql-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  		    			<i class="devicon-typescript-plain-wordmark colored"></i>
+		  		    			<i class="devicon-webpack-plain-wordmark colored"></i>
+		  		    			<i class="devicon-heroku-plain-wordmark colored"></i>
+		  		    			<i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+		  		    			<i class="devicon-git-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+			  		    		<div class="col-xs-12 col-md-8 col-md-push-4">
+			  		    			<img src="https://github.com/nottolivc/devdeskq/blob/development/DevdeskQ.png?raw&#x3D;true" class="img-responsive work-item-img center-block">
+			  		    		</div>
+			  		    		<div class="col-xs-12 col-md-4 col-md-pull-8">
+			  		    			<h2>
+				  		    				<a href="https://github.com/nottolivc/devdeskq" target="blank">DevDeskQ</a>
+				  		    		</h2>
+			  		    			
+			  		    			
+			  		    			<p>Full stack React/Express/Node.js CRUD app for submitting coding questions to a queue to be updated and answered by admins. 
+
+Deployed here on Zeit: <a href="https://devdeskq-qyemgt6tk.now.sh/login"></a></p>
+								  </div>
+								  <div class="row text-center" style="margin:20px;">
+									<a class="btn btn-launch" href="https://github.com/nottolivc/devdeskq" target="blank">View on GitHub</a>
+							</div>		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-webpack-plain-wordmark colored"></i>
+		  		    			<i class="devicon-css3-plain-wordmark colored"></i>
+		  		    			<i class="devicon-heroku-plain-wordmark colored"></i>
+		  		    			<i class="devicon-git-plain-wordmark colored"></i>
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-react-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+	  			    		<div class="row text-center" style="margin:20px;">
+	  			    				<a class="btn btn-launch" href="https://github.com/nottolivc/devdeskq" target="blank">View on GitHub</a>
+	  		    			</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+			  		    		<div class="col-xs-12 col-md-8">
+			  		    			<img src="https://github.com/nottolivc/expat-journal/blob/master/Expat%20Journal%20Thumbnail%20Img.png?raw&#x3D;true" class="img-responsive work-item-img center-block">
+			  		    		</div>
+			  		    		<div class="col-xs-12 col-md-4">
+			  		    			<h2>
+				  		    				<a href="https://github.com/nottolivc/expat-journal" target="blank">Expat Journal</a>
+				  		    		</h2>
+			  		    			
+			  		    			
+			  		    			<p>Expat journal is an application for travelers to post/journal their experiences. It was built with React, Express/Node.js, Redux, and Semantic UI. 
+
+Deployed site: <a href="https://expat-journal-fe.netlify.com/"></a></p>
+			  		    		</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-react-plain-wordmark colored"></i>
+		  		    			<i class="devicon-sketch-plain-wordmark colored"></i>
+		  		    			<i class="devicon-less-plain-wordmark colored"></i>
+		  		    			<i class="devicon-git-plain-wordmark colored"></i>
+		  		    			<i class="devicon-visualstudio-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+	  			    		<div class="row text-center" style="margin:20px;">
+	  			    				<a class="btn btn-launch" href="https://github.com/nottolivc/expat-journal" target="blank">View on GitHub</a>
+	  		    			</div>
+		  				</div>
+		  		</div>
+		  		<div class="row repo-row">
+		  		    <div class="col-sm-8 col-sm-offset-2">
+		  		    	<div class="row vertical-align">
+			  		    		<div class="col-xs-12 col-md-8 col-md-push-4">
+			  		    			<img src="https://nodejs.org/static/images/logo.svg" class="img-responsive work-item-img center-block">
+			  		    		</div>
+			  		    		<div class="col-xs-12 col-md-4 col-md-pull-8">
+			  		    			<h2>
+				  		    				<a href="https://github.com/nottolivc/Buildweek-IV" target="blank">Essentialism - REST API in Node.js</a>
+				  		    		</h2>
+			  		    			
+			  		    			
+			  		    			<p>Server/REST API built in Node.js and Express with SQLite relational database for front end team creating an app for followers of a practice known as Essentialism. Can be loaded in to Postman/Insomnia for testing authorization, database, and CRUD ops for users. 
+Deployed on Heroku: <a href="https://essentialism-node-express-serv.herokuapp.com/"></a></p>
+			  		    		</div>
+		  		    		
+		  	    		</div>
+		  	    		<div class="row text-center techUsed">
+		  	    			<div class="col-xs-12">
+		  		    			<i class="devicon-nodejs-plain-wordmark colored"></i>
+		  		    			<i class="devicon-express-plain-wordmark colored"></i>
+		  		    			<i class="devicon-heroku-plain-wordmark colored"></i>
+		  		    			<i class="devicon-linux-plain-wordmark colored"></i>
+		  	    			</div>
+		  	    		</div>
+	  			    		<div class="row text-center" style="margin:20px;">
+	  			    				<a class="btn btn-launch" href="https://github.com/nottolivc/Buildweek-IV" target="blank">View on GitHub</a>
+	  		    			</div>
+		  				</div>
+		  		</div>
+
+
+
+			</section>			
+
+			<div class="row row-footer text-center">
+				<div class="col">
+  				<div style="margin:50px;">
+  					<h3 style="margin:50px 0 15px">I'm available for work, get in touch</h3>
+				  	<a href="mailto:nottolidev@gmail.com" class="" target="_blank">
+				  		nottolidev@gmail.com
+				  	</a>
+
+				  </div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+		<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+		<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- <script src="js/myScripts.js"></script> -->
+
+	</body>
+</html>
